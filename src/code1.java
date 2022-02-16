@@ -44,12 +44,12 @@ public class code1 {
 class Main001{
     public static void main(String[] args) {
         code1 c1 = new code1();
-        for (int i = 0; i < args.length; i++) {
-            char[] arr = args[i].toCharArray();
+        for (String arg : args) {
+            char[] arr = arg.toCharArray();
             String s = c1.ascii(arr);
             c1.enqueue(s);
-            c1.even="";
-            c1.odd="";
+            c1.even = "";
+            c1.odd = "";
         }
             Node t = c1.f;
         try {
