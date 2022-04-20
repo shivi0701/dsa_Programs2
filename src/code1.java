@@ -1,15 +1,15 @@
-class Node{
+class Node1{
     String str;
-    Node next;
+    Node1 next;
 
-    public Node(String str) {
+    public Node1(String str) {
         this.str = str;
     }
 }
 
 public class code1 {
-    Node f;
-    Node r;
+    Node1 f;
+    Node1 r;
     String even = "";
     String odd = "";
     int[] arr2 = new int[1000];
@@ -30,7 +30,7 @@ public class code1 {
         return even+odd;
     }
     public void enqueue(String s){
-        Node n1=new Node(s);
+        Node1 n1=new Node1(s);
         if(f==null && r==null){
             f=r=n1;
         }
@@ -51,7 +51,7 @@ class Main001{
             c1.even = "";
             c1.odd = "";
         }
-            Node t = c1.f;
+            Node1 t = c1.f;
         try {
             while (c1.r != null) {
                 System.out.println(t.str);
